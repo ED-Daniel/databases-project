@@ -331,3 +331,17 @@ GRANT ALL ON TABLE public.audio_files TO test;
 -- public.audio_files foreign keys
 
 ALTER TABLE public.audio_files ADD CONSTRAINT audio_files_track_id_fkey FOREIGN KEY (track_id) REFERENCES public.tracks(id);
+
+---------------------------------------------------------------------------
+
+-- DROP TABLE public.roles_audit;
+
+CREATE TABLE roles_audit (
+    id SERIAL PRIMARY KEY,
+    role_id INT NOT NULL,
+    old_name VARCHAR NOT NULL,
+    old_description TEXT,
+    action_type VARCHAR(10) NOT NULL,  -- UPDATE или DELETE
+    modified_at TIMESTAMPTZ DEFAULT now(),
+    modified_by VARCHAR NOT NULL  -- Кто сделал изменение
+);

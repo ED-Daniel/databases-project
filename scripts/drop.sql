@@ -13,6 +13,7 @@ ALTER TABLE public.tracks DROP CONSTRAINT IF EXISTS tracks_img_files_id_fkey;
 ALTER TABLE public.audio_files DROP CONSTRAINT IF EXISTS audio_files_track_id_fkey;
 
 -- Удаление таблиц в правильном порядке
+DROP TABLE IF EXISTS public.roles_audit;
 DROP TABLE IF EXISTS public.audio_files;
 DROP TABLE IF EXISTS public.img_files;
 DROP TABLE IF EXISTS public.order_tracks;
