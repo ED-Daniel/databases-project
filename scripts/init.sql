@@ -273,6 +273,8 @@ GRANT ALL ON TABLE public.order_tracks TO test;
 
 ALTER TABLE public.order_tracks ADD CONSTRAINT order_tracks_license_id_fkey FOREIGN KEY (license_id) REFERENCES public.licenses(id);
 ALTER TABLE public.order_tracks ADD CONSTRAINT order_tracks_order_id_fkey FOREIGN KEY (order_id) REFERENCES public.orders(id);
+ALTER TABLE order_tracks ADD CONSTRAINT unique_order_license UNIQUE (order_id, license_id);
+
 
 -- public.img_files definition
 
