@@ -13,6 +13,7 @@ echo "PostgreSQL запущен! Выполняем SQL-скрипты..."
 # Выполняем скрипты
 psql -h postgres -U test -d bdsm -f /scripts/init.sql
 psql -h postgres -U test -d bdsm -f /scripts/import.sql
+psql -h postgres -U test -d bdsm -f /scripts/permissions.sql
 
 for sql_file in /scripts/procedures/*.sql; do
   echo "Выполняем $sql_file..."
