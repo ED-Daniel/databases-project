@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
 -- public.users definition
 
 -- Drop table
@@ -6,7 +8,7 @@
 
 CREATE TABLE public.users (
 	email varchar NOT NULL,
-	"password" varchar NOT NULL,
+	"password" BYTEA NOT NULL,
 	is_verified bool NULL,
 	verification_code varchar NULL,
 	referral_code varchar NOT NULL,
