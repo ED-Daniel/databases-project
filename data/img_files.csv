@@ -1,0 +1,3 @@
+name,type,url,size,owner_id
+image1.jpg,jpg,https://example.com/image1.jpg,1024,4
+image2.jpg,jpg,https://example.com/image2.jpg,2048,5

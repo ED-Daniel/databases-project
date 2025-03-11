@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_db_studying
+    restart: always
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: bdsm
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./docker/postgres_data:/var/lib/postgresql/data  # Сохранение данных PostgreSQL на хосте
+      - ./scripts:/scripts
+      - ./data:/data
+    entrypoint: ["/scripts/entrypoint.sh"]

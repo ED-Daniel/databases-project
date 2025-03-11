@@ -1,0 +1,6 @@
+name,description,type,key_sign,bpm,free_download,owner_id,is_deleted,is_draft,duration
+Трек 1,Описание трека 1,Hip-Hop,C#m,120,false,4,false,false,180
+Трек 2,Описание трека 2,Trap,Am,140,false,4,false,false,200
+Трек 3,Описание трека 3,R&B,Fm,100,false,5,false,false,220
+Трек 4,Описание трека 4,Pop,Gm,130,false,5,false,false,190
+Трек 5,Описание трека 5,Electronic,Dm,150,false,4,false,false,210

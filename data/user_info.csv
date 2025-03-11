@@ -1,0 +1,6 @@
+user_id,full_name,show_full_name,nickname,show_nickname,about,show_about,instagram_url,show_instagram,youtube_url,show_youtube,telegram_url,show_telegram,contact_phone,show_contact_phone
+1,Иван Иванов,true,ivan123,true,Люблю музыку,true,https://instagram.com/ivan123,true,https://youtube.com/ivan123,true,https://t.me/ivan123,true,+79123456789,true
+2,Петр Петров,true,petr456,true,Музыкальный энтузиаст,true,https://instagram.com/petr456,true,https://youtube.com/petr456,true,https://t.me/petr456,true,+79123456780,true
+3,Сидор Сидоров,true,sidor789,true,Музыкальный продюсер,true,https://instagram.com/sidor789,true,https://youtube.com/sidor789,true,https://t.me/sidor789,true,+79123456781,true
+4,Алексей Алексеев,true,alex999,true,Продаю биты,true,https://instagram.com/alex999,true,https://youtube.com/alex999,true,https://t.me/alex999,true,+79123456782,true
+5,Дмитрий Дмитриев,true,dima777,true,Продаю эксклюзивные биты,true,https://instagram.com/dima777,true,https://youtube.com/dima777,true,https://t.me/dima777,true,+79123456783,true

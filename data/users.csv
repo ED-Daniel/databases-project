@@ -1,0 +1,6 @@
+email,password,is_verified,verification_code,referral_code,is_ban,is_deleted
+user1@example.com,password1,true,code1,ref1,false,false
+user2@example.com,password2,true,code2,ref2,false,false
+user3@example.com,password3,true,code3,ref3,false,false
+seller1@example.com,password4,true,code4,ref4,false,false
+seller2@example.com,password5,true,code5,ref5,false,false

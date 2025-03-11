@@ -1,0 +1,7 @@
+name,track_id,price_rub,price_usd,term_years,distribution_copies,audio_streams,free_downloads,monetized_video_streams,non_monetized_video_streams,monetized_videos,non_monetized_videos,radio_broadcasting_rights,radio_stations_allowed,performance_for_profit,not_for_profit_performances,is_deleted,is_show
+Free Lease,1,1000.00,15.00,1,1000,5000,100,100,200,50,100,true,10,true,5,false,true
+Exclusive,1,5000.00,75.00,5,10000,100000,1000,1000,2000,500,1000,true,50,true,10,false,true
+Free Lease,2,1200.00,18.00,1,1000,5000,100,100,200,50,100,true,10,true,5,false,true
+Exclusive,2,6000.00,90.00,5,10000,100000,1000,1000,2000,500,1000,true,50,true,10,false,true
+Free Lease,3,1500.00,22.00,1,1000,5000,100,100,200,50,100,true,10,true,5,false,true
+Exclusive,3,7000.00,105.00,5,10000,100000,1000,1000,2000,500,1000,true,50,true,10,false,true

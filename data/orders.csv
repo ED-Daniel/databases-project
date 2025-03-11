@@ -1,0 +1,4 @@
+user_id,amount,currency,status
+1,100000,RUB,completed
+2,120000,RUB,completed
+3,150000,RUB,pending
