@@ -15,4 +15,23 @@ services:
       - ./docker/postgres_data:/var/lib/postgresql/data  # Сохранение данных PostgreSQL на хосте
       - ./scripts:/scripts
       - ./data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test -d bdsm"]
+      interval: 10s
+      retries: 10
+      timeout: 3s
+
+  db_initializer:
+    image: postgres:latest  # Используем тот же образ
+    container_name: db_initializer
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: bdsm
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./scripts:/scripts
+      - ./data:/data
     entrypoint: ["/scripts/entrypoint.sh"]
