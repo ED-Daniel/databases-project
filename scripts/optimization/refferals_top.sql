@@ -1,3 +1,11 @@
+INSERT INTO public.referrals (referrer_id, referred_id) VALUES
+(1, 2),
+(1, 3),
+(1, 4),
+(3, 5);
+
+---
+
 SELECT u.id, u.email, COUNT(r.referred_id) AS total_referrals
 FROM users u
 JOIN referrals r ON u.id = r.referrer_id
